@@ -2,8 +2,9 @@
 layout: post
 title: "Importance of strategy game "
 subtitle: "Strategy of football is the importance to win the game"
-# background: '\img\bg-about.jpg'
-background: url('\img\posts\strategy\first.jpg')
+background: '\img\posts\strategy\first.jpg'
+# background: ![IMdb Page](\img\posts\strategy\Sport-Soccer-Football-Formation-3-2-5-WM.png) 
+# background: url('\img\posts\strategy\first.jpg')
 ---
 
 ## Background
