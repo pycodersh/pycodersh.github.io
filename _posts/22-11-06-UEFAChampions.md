@@ -2,7 +2,7 @@
 layout: post
 title: "UEFA Champions League"
 subtitle: "Winners"
-background: '/img/posts/strategy/football.jpg'
+background: '/img/posts/UEFA/mqdefault.jpg'
 # background: ![IMdb Page](\img\posts\strategy\Sport-Soccer-Football-Formation-3-2-5-WM.png) 
 # background: url('\img\posts\strategy\first.jpg')
 ---
