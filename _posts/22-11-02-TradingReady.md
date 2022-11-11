@@ -2,7 +2,7 @@
 layout: post
 title: "Starting stock Auto Trading(2) "
 subtitle: "Set Up for Auto Trading tools "
-background: '\img\posts\strategy\first.jpg'
+background: '/img/posts/stock/stock.jpg'
 # background: ![IMdb Page](\img\posts\strategy\Sport-Soccer-Football-Formation-3-2-5-WM.png) 
 # background: url('\img\posts\strategy\first.jpg')
 ---
@@ -24,16 +24,19 @@ if (bConnect == 0):
 대신증권 서버와 통신하며 필요한 데이터들을 얻기위해서는 대신증권이 제공하는 object들을 이용하여
 값을 받아오거나 보내야한다. 아래와 같은 필요한 object들을 대신증권에서 받아서 실행한다. 
 <크레온 플러스 공통 OBJECT>
+```pthon
 cpCodeMgr = win32com.client.Dispatch('CpUtil.CpStockCode')
 cpStatus = win32com.client.Dispatch('CpUtil.CpCybos')
 cpTradeUtil = win32com.client.Dispatch('CpTrade.CpTdUtil')
 cpStock = win32com.client.Dispatch('DsCbo1.StockMst')
 cpOhlc = win32com.client.Dispatch('CpSysDib.StockChart')
 cpBalance = win32com.client.Dispatch('CpTrade.CpTd6033')
-
+```
 ## My Account initialize
 주식 매매를 하기위해서는 내 계좌의 가지고있는 주식 및 수량, 금액등을 알아야함으로 
 내 계좌를 살펴보는 함수가 필요하다.
+
+```python
 def get_stock_balance(code):
     if code == 'ALL':
         dbgout('계좌명: ' + str(cpBalance.GetHeaderValue(0)))
@@ -41,12 +44,15 @@ def get_stock_balance(code):
         dbgout('평가금액: ' + str(cpBalance.GetHeaderValue(3))) #예수금
         dbgout('평가손익: ' + str(cpBalance.GetHeaderValue(4)))
         dbgout('종목수: ' + str(cpBalance.GetHeaderValue(7)))
+```
 
 위와 같은 코드로 내 계좌 balancing 코드를 작성하였다. 
 
 ## Buy, Sell 
 내가 사고자하는 혹은 팔고자하는 주식을 매매하기 위해서는 buy, sell에 대한 코드작성이 필요하다.
 나는 메인함수에서 buy, sell함수를 호출하여 사용하는 방법으로 진행하였으며, 
+
+```python
 def buy_etf(code):
     if ask_price > 0:  # 매수호가가 존재하면   
             buy_qty = buy_amount // ask_price  
@@ -58,7 +64,8 @@ def buy_etf(code):
         acc = cpTradeUtil.AccountNumber[1]      # 계좌번호, 복수계좌번호 선택
         #acc = cpTradeUtil.AccountNumber[0]      # 계좌번호
         accFlag = cpTradeUtil.GoodsList(acc, 1) # -1:전체,1:주식,2:선물/옵션            
-
+```
+```python
 def sell_all():
       while True:    
             stocks = get_stock_balance('ALL') 
@@ -80,7 +87,7 @@ def sell_all():
                     ret = cpOrder.BlockRequest()
                     printlog('매도', s['code'], s['name'], s['qty'], 
                         '-> cpOrder.BlockRequest() -> returned', ret)
-
+```
 위와 같이 buy, sell에 대한 함수를 완료하였다. 
 (코드가 길어서 적당히 자름)
 

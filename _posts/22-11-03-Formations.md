@@ -2,7 +2,7 @@
 layout: post
 title: "Formations of Football "
 subtitle: "My view of Formations "
-background: '\img\posts\strategy\first.jpg'
+background: '/img/posts/strategy/football.jpg'
 # background: ![IMdb Page](\img\posts\strategy\Sport-Soccer-Football-Formation-3-2-5-WM.png) 
 # background: url('\img\posts\strategy\first.jpg')
 ---
@@ -18,7 +18,7 @@ We analyzed the most popular formations in today's football and summarized the m
  
 
 ## (1) 4-4-2
-
+![IMdb Page](\img\posts\strategy\4-4-2.png)
 The oldest formation widely used in modern football, the 4-4-2, was used by many teams around the world, but the prevailing opinion is that the golden age of the 4-4-2 has declined. For today's top-tier clubs in the world, the use of the 4-4-2 tactic is often viewed as a failure and is perceived as an unsure of their ability to move forward.
 
 The 4-4-2 is still a powerful strategy because it is easy to implement and understand by players on a well-trained team, but it lacks the sophistication provided by more modern and forward-looking tactics.
@@ -45,7 +45,7 @@ To compensate for this, many 4-4-2 players must play a defensive central midfiel
 It's hard to pinpoint a formation where 4-4-2 is particularly dominant, but there are times when you need to use this system for aggressive team play. The players are evenly distributed throughout the pitch, opening up the possibility of an immediate attack as soon as you regain possession of the ball.
 
 ## (2) 4-3-3
-
+![IMdb Page](\img\posts\strategy\4-3-3.png)
 After great success as manager Jose Mourinho at Chelsea, the system is still popular among the best clubs in the world today. This is beneficial for teams of players with very skilled passing skills and is well implemented in systems that prioritize intelligent ball movement as a means to create scoring opportunities.
 
  
@@ -79,7 +79,7 @@ When teammates decide that strikers and defensive midfielders cannot create offe
  
 
 ## (3) 4-2-3-1
-
+![IMdb Page](\img\posts\strategy\4-2-3-1.png)
 Sometimes it can seem like every club on the planet chooses the 4-2-3-1 formation. This makes it look like today's Premier League teams have loved the formation they've seen in Spain and Germany over the years, and it's undoubtedly the system of choice for many top clubs today.
 
 ### Strength
@@ -109,7 +109,7 @@ Also, when the opponent passes the ball defensively, it is a huge burden on the 
  
 
 ## (4) 4-5-1 (+ 4-1-4-1)
-
+![IMdb Page](\img\posts\strategy\4-5-1.png)
 The 4-5-1 is often the formation of choice for teams looking to avoid defeat, with a focus on filling the midfield to maintain possession and make it difficult for opponents to break through the center.
 
 However, instead of gaining defensive cohesion and tempo management, it is less intimidating when attacking. In this system, it is difficult to launch a surprise and unusual attack. This is especially true when deploying a flank midfielder for defensive purposes rather than forward threats.
@@ -143,7 +143,7 @@ Also, depending on the style of the 4-5-1 implemented, it may be difficult to co
  
 
 ## (5) 3-5-2
-
+![IMdb Page](\img\posts\strategy\3-5-2.png)
 The 3-5-2, the most popular in Italy, dominated the mini-renaissance era. For this system to work well, you need a very capable and tactical wingback.
 
  
