@@ -27,7 +27,7 @@ The 4-4-2 is still a powerful strategy because it is easy to implement and under
 
 ### Strength
 
-Due to the two striker forward placement, the midfielder and defender do not need to delay their offensive work. Unlike tactics that use one-saws, the 4-4-2 allows for an immediate attack without wasting time waiting for midfield support. Having two wingers on both sides and a wide full-back creates room for two strikers, as it allows the opponent to widen the defensive line to counter flank threats. Because of these clear advantages and the ease of strategizing, many teams choose the 4-4-2 when defending deep into their own half.
+*Due to the two striker forward placement, the midfielder and defender do not need to delay their offensive work. Unlike tactics that use one-saws, the 4-4-2 allows for an immediate attack without wasting time waiting for midfield support. Having two wingers on both sides and a wide full-back creates room for two strikers, as it allows the opponent to widen the defensive line to counter flank threats. Because of these clear advantages and the ease of strategizing, many teams choose the 4-4-2 when defending deep into their own half.*
 
  
 
