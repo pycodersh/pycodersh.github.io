@@ -1,4 +1,262 @@
----
-layout: home
-background: '/img/bg-index.jpg'
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxFootball</title>
+    <meta name="description"
+        content="Max-football : All about Football Live Score, Soccer, Football Schedule, Qatar Worldcup, Match Result " />
+    <meta name="description"
+        content="All the football fixtures, latest results & live scores for all leagues and competitions including Premier League,  Champions league, Laliga, Serie-A, Ligue1, 2022-QatarWordlcup " />
+    <meta name="description" content="맥스풋볼은 세계 탑리그인 프리미어리그, 라리가, 세리에A, 리그1와 유로파리그, 월드컵의 모든 경기결과 및 일정, 하이라이트 영상을 제공 " />
+    <meta name="description" content="세계축구, 축구경기일정, 카타르월드컵" />
+    <meta name="author" content="pycodersh" />
+    <meta property="og:title" content="MaxFootball Homepage">
+    <meta property="og:description" content="MaxFootball">
+    <meta property="og:image" content="https://max-football.com/football.jpg">
+    <meta property="og:url" content="https://max-football.com/">
+    <!-- 링크 -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <script src="https://kit.fontawesome.com/ed602f8c49.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYDX5NEVS5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HYDX5NEVS5');
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-futbol"></i>
+            <a onClick="window.location.reload()" href="#">MAXFOOTBALL</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item selected" data-filter="Live" data-link="#Live">
+                <a onclick="getTeamInfo('LiveScore')" id="Team_id" href="#" target="_self"
+                    data-value="LiveScore">HOME</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Premier" data-link="#Pre">
+                <a onclick="getTeamInfo('england-premier-league')" id="Team_id" href="#" target="_self"
+                    data-value="england-premier-league">PREMIER-LEAGUE</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Laliga" data-link="#La">
+                <a onclick="getTeamInfo('spain-la-liga')" id="Team_id" href="#" target="_self"
+                    data-value="spain-la-liga">LALIGA
+            </li>
+            <li class="navbar__menu__item" data-filter="Bundesliga" data-link="#Bu"><a
+                    onclick="getTeamInfo('germany-bundesliga')" id="Team_id" href="#" target="_self"
+                    data-value="germany-bundesliga">BUNDESLIGA</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Serie" data-link="#Se"><a onclick="getTeamInfo('italy-serie-a')"
+                    id="Team_id" href="#" target="_self" data-value="italy-serie-a">SERIE-A</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Ligue1" data-link="#Fr"><a
+                    onclick="getTeamInfo('france-ligue-1')" id="Team_id" href="#" target="_self"
+                    data-value="france-ligue-1">LIGUE-1</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Champ" data-link="#Chmp"><a
+                    onclick="getTeamInfo('uefa-champions-league')" id="Team_id" href="#" target="_self"
+                    data-value="france-ligue-1">CHAMPIONS-LEAGUE</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Euro" data-link="#Euro"><a
+                    onclick="getTeamInfo('uefa-europa-league')" id="Team_id" href="#" target="_self"
+                    data-value="france-ligue-1">EUROPA-LEAGUE</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Worldcup" data-link="#Wcp"><a
+                    onclick="getTeamInfo('fifa-world-cup')" id="Team_id" href="#" target="_self"
+                    data-value="france-ligue-1">WORLDCUP</a>
+            </li>
+            <li class="navbar__menu__item" data-filter="Blog" data-link="#blog"><a href="blog.html"
+                    target="_self">BLOG</a>
+            </li>
+
+
+        </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+
+        </div>
+    </section>
+
+    <div class="ad-banner2">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-rFhmWLOfI9ImEODL" data-ad-width="320"
+            data-ad-height="100"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-KvTI5Z5pBa05bVIV" data-ad-width="320"
+            data-ad-height="100"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    </div>
+
+    <!-- Results View -->
+    <section class="section">
+        <div class="navbar__club_results">
+            <p id="Live" class="project" target="blank" data-type="Live" description="Livescore"></p>
+            <p id="Pre" class="project" target="blank" data-type="Premier" description="Premier-League"></p>
+            <p id="La" class="project" target="blank" data-type="Laliga" description="Laliga"></p>
+            <p id="Bu" class="project" target="blank" data-type="Bundesliga" description="Bundesliga"></p>
+            <p id="Se" class="project" target="blank" data-type="Serie" description="SerieA"></p>
+            <p id="Pr" class="project" target="blank" data-type="Ligue1" description="Ligue1"></p>
+            <p id="Chmp" class="project" target="blank" data-type="Champ" description="Champions"></p>
+            <p id="Euro" class="project" target="blank" data-type="Euro" description="Europa-League"></p>
+            <p id="Wcp" class="project" target="blank" data-type="Worldcup" description="2022Worldcup"></p>
+        </div>
+    </section>
+
+
+
+
+    <!-- League Information -->
+    <section class="section">
+        <div class="work__projects">
+
+            <iframe id="LiveScore"
+                src="https://www.scorebat.com/embed/livescore/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;" class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+            <iframe id="Preiframe"
+                src="https://www.scorebat.com/embed/competition/england-premier-league/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"
+                marginwidth="0" marginheight="0" hspace="0" allowTransparency="true"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+            <iframe id="Laframe"
+                src="https://www.scorebat.com/embed/competition/spain-la-liga/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+            <iframe id="Bunframe"
+                src="https://www.scorebat.com/embed/competition/germany-bundesliga/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+            <iframe id="Seframe"
+                src="https://www.scorebat.com/embed/competition/italy-serie-a/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+            <iframe id="Prframe"
+                src="https://www.scorebat.com/embed/competition/france-ligue-1/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+            <iframe id="Champframe"
+                src="https://www.scorebat.com/embed/league/uefa-champions-league/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+            <iframe id="Euroframe"
+                src="https://www.scorebat.com/embed/league/uefa-europa-league/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0&tab=standings"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+            <iframe id="Worldcupframe"
+                src="https://www.scorebat.com/embed/league/fifa-world-cup/?token=Mjk4NjVfMTY2Nzg2Njc1OV9kNDdhMzY4OWMzYTA2MTdhNGZiM2QwZWRmOWQ2ZmUyZDFiZDE4M2Vi"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;display:block;"
+                class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- First page -->
+    <section class="section">
+        <div class="defalt_view">
+            <!-- <img id="thumbnail" src="" alt="thumbnail Image">
+            <p id="TeamTitle"></p> -->
+            <iframe id="LiveScore"
+                src="https://www.scorebat.com/embed/livescore/?token=Mjk4NjVfMTY2NzA0NDA3M184ZDY2MmQ2MDY3MDU3OTcyODc4ODc5ODkxYWM2NWU0ZWY2Y2E5MGM0"
+                frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen'
+                style="width:100%;height:760px;overflow:hidden;" class="_scorebatEmbeddedPlayer_"></iframe>
+            <script>(function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+
+        </div>
+        <!-- Aside -->
+        <div class="layout-aside-left" style="float: left;">
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-ya9VORHazNgEf4Hv" data-ad-width="160"
+                data-ad-height="600"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+        </div>
+        <div class="layout-aside-right"></div>
+
+    </section>
+
+
+    <div class="ad-banner">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-HzdVOhKTf4DKSnmK" data-ad-width="320"
+            data-ad-height="50"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+    </div>
+
+
+
+    <!-- contact footer로 변경필요 -->
+    <footer id="contact" class="section">
+        <!-- <h2 class="contact__title">Let's talk</h2> -->
+        <p class="contact__rights">
+            맥스풋볼은 최대 축구경기인 탑리그인 프리미어리그, 라리가, 세리에A, 리그1와 유로파리그, 월드컵의 모든 경기결과 및 일정, 하이라이트 영상을 제공합니다.
+            <br>
+            Football, Soccer, Score, Match results, Schedule, Fixture, League table
+            <br>
+            (c) 2022 MaxFootball all rights reserved
+        </p>
+        </footer>
+
+
+
+</body>
+
+</html>
