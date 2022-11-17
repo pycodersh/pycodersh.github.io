@@ -26,4 +26,9 @@
   <!-- Google adsense code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4923039498151014"
      crossorigin="anonymous"></script>  
+  
+      <!-- ... -->
+  {% if jekyll.environment == 'production' and page.layout == 'post' and site.google_adsense %}
+  {% include google-adsense.html %}
+  {% endif %}
 </head>
